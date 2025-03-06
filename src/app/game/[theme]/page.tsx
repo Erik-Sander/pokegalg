@@ -490,12 +490,37 @@ export default function GamePage({ params }: GamePageProps): JSX.Element {
       justifyContent: 'center',
       alignItems: 'center',
       backgroundImage: `url(${themeDetails.svg})`,
-      backgroundSize: '80%',
+      backgroundSize: '60%',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
-      backgroundBlendMode: 'soft-light',
+      backgroundBlendMode: 'normal',
     }}>
-      <style>{shimmerKeyframes}</style>
+      <style>
+        {shimmerKeyframes}
+        {`
+          @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
+          
+          .theme-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(${themeDetails.svg});
+            background-size: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.15;
+            z-index: 0;
+            animation: fadeIn 1s ease-in-out;
+          }
+        `}
+      </style>
+      
+      <div className="theme-bg"></div>
       
       <div style={{ 
         backgroundColor: 'white',
@@ -503,7 +528,9 @@ export default function GamePage({ params }: GamePageProps): JSX.Element {
         padding: '2rem',
         maxWidth: '800px',
         width: '100%',
-        boxShadow: '0 10px 25px rgba(0,0,0,0.1)'
+        boxShadow: '0 10px 25px rgba(0,0,0,0.1)',
+        position: 'relative',
+        zIndex: 1
       }}>
         <header style={{ 
           display: 'flex',
