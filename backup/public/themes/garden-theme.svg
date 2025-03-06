@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Achtergrond - lichte hemel -->
+  <rect width="800" height="500" fill="#e8f4ea"/>
+  
+  <!-- Gras achtergrond -->
+  <rect width="800" height="180" y="320" fill="#7ac142"/>
+  
+  <!-- Pad door de tuin -->
+  <path d="M0,400 C200,380 400,420 600,390 L800,400 L800,450 L0,450 Z" fill="#d2b48c"/>
+  
+  <!-- Verschillende planten en bloemen -->
+  <!-- Groep 1: Links -->
+  <g transform="translate(100, 340)">
+    <!-- Stengel -->
+    <path d="M0,0 C-5,-30 5,-60 0,-90" stroke="#5e8c31" stroke-width="3" fill="none"/>
+    <!-- Bladeren -->
+    <path d="M0,-30 C-20,-35 -30,-25 -20,-15" stroke="#7ac142" stroke-width="2" fill="#7ac142"/>
+    <path d="M0,-50 C20,-55 30,-45 20,-35" stroke="#7ac142" stroke-width="2" fill="#7ac142"/>
+    <path d="M0,-70 C-20,-75 -25,-65 -15,-60" stroke="#7ac142" stroke-width="2" fill="#7ac142"/>
+    <!-- Bloem -->
+    <circle cx="0" cy="-90" r="15" fill="#ff9eaa"/>
+    <circle cx="0" cy="-90" r="5" fill="#ffcc00"/>
+  </g>
+  
+  <!-- Groep 2: Midden-links -->
+  <g transform="translate(200, 330)">
+    <!-- Stengel -->
+    <path d="M0,0 C5,-40 -5,-80 0,-110" stroke="#5e8c31" stroke-width="4" fill="none"/>
+    <!-- Bladeren -->
+    <path d="M0,-40 C-25,-45 -35,-30 -20,-20" stroke="#7ac142" stroke-width="3" fill="#7ac142"/>
+    <path d="M0,-70 C30,-75 40,-60 25,-50" stroke="#7ac142" stroke-width="3" fill="#7ac142"/>
+    <!-- Bloem - Vileplume-achtig -->
+    <circle cx="0" cy="-110" r="20" fill="#e91e63"/>
+    <circle cx="0" cy="-110" r="10" fill="#ffcc00"/>
+    <path d="M0,-110 C-20,-130 -10,-145 0,-140" fill="#e91e63"/>
+    <path d="M0,-110 C20,-130 10,-145 0,-140" fill="#e91e63"/>
+    <path d="M0,-110 C-15,-125 -25,-120 -20,-110" fill="#e91e63"/>
+    <path d="M0,-110 C15,-125 25,-120 20,-110" fill="#e91e63"/>
+  </g>
+  
+  <!-- Groep 3: Midden-rechts -->
+  <g transform="translate(450, 350)">
+    <!-- Stengel -->
+    <path d="M0,0 C-5,-30 5,-60 0,-80" stroke="#5e8c31" stroke-width="3" fill="none"/>
+    <!-- Bladeren -->
+    <path d="M0,-30 C-15,-40 -25,-35 -15,-25" stroke="#7ac142" stroke-width="2" fill="#7ac142"/>
+    <path d="M0,-50 C15,-60 25,-55 15,-45" stroke="#7ac142" stroke-width="2" fill="#7ac142"/>
+    <!-- Bloem - Sunflora-achtig -->
+    <circle cx="0" cy="-80" r="15" fill="#f9a825"/>
+    <circle cx="0" cy="-80" r="8" fill="#5d4037"/>
+    <path d="M0,-80 C-15,-100 -10,-105 0,-95" fill="#f9a825"/>
+    <path d="M0,-80 C15,-100 10,-105 0,-95" fill="#f9a825"/>
+    <path d="M0,-80 C-15,-65 -20,-70 -5,-75" fill="#f9a825"/>
+    <path d="M0,-80 C15,-65 20,-70 5,-75" fill="#f9a825"/>
+    <path d="M0,-80 C-20,-85 -20,-90 -5,-85" fill="#f9a825"/>
+    <path d="M0,-80 C20,-85 20,-90 5,-85" fill="#f9a825"/>
+  </g>
+  
+  <!-- Groep 4: Rechts -->
+  <g transform="translate(650, 345)">
+    <!-- Stengel met kronkel -->
+    <path d="M0,0 C10,-30 -5,-60 5,-90" stroke="#5e8c31" stroke-width="3" fill="none"/>
+    <!-- Bladeren -->
+    <path d="M0,-25 C-20,-30 -25,-15 -10,-15" stroke="#7ac142" stroke-width="2" fill="#7ac142"/>
+    <path d="M5,-60 C25,-65 30,-50 15,-50" stroke="#7ac142" stroke-width="2" fill="#7ac142"/>
+    <path d="M0,-40 C-15,-50 -20,-35 -5,-35" stroke="#7ac142" stroke-width="2" fill="#7ac142"/>
+    <!-- Bloem - Bellossom-achtig -->
+    <circle cx="5" cy="-90" r="12" fill="#8cc541"/>
+    <circle cx="5" cy="-90" r="6" fill="#ffcc00"/>
+    <circle cx="-5" cy="-95" r="8" fill="#ff5252"/>
+    <circle cx="15" cy="-95" r="8" fill="#ff5252"/>
+    <circle cx="0" cy="-105" r="8" fill="#ff5252"/>
+  </g>
+  
+  <!-- Struiken -->
+  <g transform="translate(50, 360)">
+    <ellipse cx="0" cy="0" rx="50" ry="40" fill="#5d9e31"/>
+    <ellipse cx="15" cy="-10" rx="30" ry="25" fill="#7ac142"/>
+  </g>
+  
+  <g transform="translate(750, 370)">
+    <ellipse cx="0" cy="0" rx="50" ry="30" fill="#5d9e31"/>
+    <ellipse cx="-15" cy="-10" rx="20" ry="15" fill="#7ac142"/>
+  </g>
+  
+  <!-- Klein meertje -->
+  <ellipse cx="350" cy="400" rx="100" ry="30" fill="#4fc3f7"/>
+  <ellipse cx="350" cy="400" rx="90" ry="25" fill="#29b6f6"/>
+  <path d="M290,385 C320,375 380,375 410,385" stroke="#81d4fa" stroke-width="2" fill="none"/>
+  
+  <!-- Houten bankje -->
+  <g transform="translate(520, 380)">
+    <rect x="-30" y="-15" width="60" height="5" fill="#8d6e63"/>
+    <rect x="-30" y="-5" width="60" height="5" fill="#8d6e63"/>
+    <rect x="-25" y="0" width="5" height="15" fill="#6d4c41"/>
+    <rect x="20" y="0" width="5" height="15" fill="#6d4c41"/>
+  </g>
+  
+  <!-- Bulbasaur (gestileerd) -->
+  <g transform="translate(300, 365)">
+    <!-- Lichaam -->
+    <ellipse cx="0" cy="0" rx="25" ry="15" fill="#3ab75c"/>
+    <ellipse cx="-15" cy="0" rx="10" ry="8" fill="#3ab75c"/>
+    <ellipse cx="15" cy="0" rx="10" ry="8" fill="#3ab75c"/>
+    <!-- Kop -->
+    <circle cx="0" cy="-15" r="15" fill="#8cc541"/>
+    <ellipse cx="-7" cy="-20" rx="3" ry="4" fill="#ffffff"/>
+    <ellipse cx="7" cy="-20" rx="3" ry="4" fill="#ffffff"/>
+    <ellipse cx="-7" cy="-20" rx="1.5" ry="2" fill="#000000"/>
+    <ellipse cx="7" cy="-20" rx="1.5" ry="2" fill="#000000"/>
+    <!-- Zaad op rug -->
+    <ellipse cx="0" cy="-5" rx="12" ry="10" fill="#e06666"/>
+    <path d="M0,-5 C-5,-15 5,-15 0,-5" stroke="#5d9e31" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Trainer (Imre) -->
+  <g transform="translate(440, 370)">
+    <!-- Lichaam -->
+    <rect x="-10" y="-15" width="20" height="30" rx="5" ry="5" fill="#3f51b5"/>
+    <!-- Hoofd -->
+    <circle cx="0" cy="-25" r="10" fill="#ffdbac"/>
+    <!-- Haren -->
+    <path d="M-10,-25 C-5,-35 5,-35 10,-25" fill="#5d4037"/>
+    <!-- Armen -->
+    <path d="M-10,-5 L-25,5" stroke="#3f51b5" stroke-width="5" stroke-linecap="round"/>
+    <path d="M10,-5 L25,5" stroke="#3f51b5" stroke-width="5" stroke-linecap="round"/>
+    <!-- Benen -->
+    <path d="M-5,15 L-5,35" stroke="#283593" stroke-width="6" stroke-linecap="round"/>
+    <path d="M5,15 L5,35" stroke="#283593" stroke-width="6" stroke-linecap="round"/>
+    <!-- Gezicht -->
+    <line x1="-5" y1="-25" x2="-2" y2="-25" stroke="#5d4037" stroke-width="1"/>
+    <line x1="5" y1="-25" x2="2" y2="-25" stroke="#5d4037" stroke-width="1"/>
+    <path d="M-3,-22 C-1,-20 1,-20 3,-22" stroke="#5d4037" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Pikachu -->
+  <g transform="translate(600, 360)">
+    <!-- Lichaam -->
+    <ellipse cx="0" cy="0" rx="15" ry="12" fill="#fdd835"/>
+    <!-- Kop -->
+    <circle cx="0" cy="-15" r="12" fill="#fdd835"/>
+    <!-- Oren -->
+    <path d="M-10,-20 L-15,-35 L-5,-25" fill="#fdd835"/>
+    <path d="M10,-20 L15,-35 L5,-25" fill="#fdd835"/>
+    <path d="M-10,-20 L-15,-35 L-5,-25" stroke="#fdd835" stroke-width="1"/>
+    <path d="M10,-20 L15,-35 L5,-25" stroke="#fdd835" stroke-width="1"/>
+    <rect x="-15" y="-37" width="5" height="5" fill="#5d4037"/>
+    <rect x="10" y="-37" width="5" height="5" fill="#5d4037"/>
+    <!-- Staart -->
+    <path d="M15,0 C20,-5 30,0 35,-10" stroke="#fdd835" stroke-width="5" stroke-linecap="round"/>
+    <!-- Poten -->
+    <path d="M-10,10 L-15,15" stroke="#fdd835" stroke-width="4" stroke-linecap="round"/>
+    <path d="M10,10 L15,15" stroke="#fdd835" stroke-width="4" stroke-linecap="round"/>
+    <!-- Gezicht -->
+    <circle cx="-5" cy="-18" r="2" fill="#5d4037"/>
+    <circle cx="5" cy="-18" r="2" fill="#5d4037"/>
+    <ellipse cx="0" cy="-13" rx="2" ry="1" fill="#5d4037"/>
+    <path d="M-8,-12 C-6,-10 -4,-10 -2,-12" stroke="#ff5252" stroke-width="1" fill="none"/>
+    <path d="M8,-12 C6,-10 4,-10 2,-12" stroke="#ff5252" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Utrecht Dom silhouet in verte -->
+  <g transform="translate(400, 200)">
+    <rect x="-5" y="-100" width="10" height="100" fill="#9e9e9e" opacity="0.6"/>
+    <polygon points="-15,-110 15,-110 0,-140" fill="#9e9e9e" opacity="0.6"/>
+    <rect x="-15" y="-110" width="30" height="10" fill="#9e9e9e" opacity="0.6"/>
+    <rect x="-20" y="-100" width="40" height="5" fill="#9e9e9e" opacity="0.6"/>
+  </g>
+  
+  <!-- Vlinders -->
+  <g transform="translate(250, 200)">
+    <path d="M0,0 C-10,-5 -15,5 0,0 C15,5 10,-5 0,0" fill="#ba68c8" opacity="0.8"/>
+    <line x1="0" y1="0" x2="0" y2="5" stroke="#000000" stroke-width="1"/>
+  </g>
+  
+  <g transform="translate(500, 150)">
+    <path d="M0,0 C-8,-4 -12,4 0,0 C12,4 8,-4 0,0" fill="#29b6f6" opacity="0.8"/>
+    <line x1="0" y1="0" x2="0" y2="4" stroke="#000000" stroke-width="1"/>
+  </g>
+  
+  <g transform="translate(150, 250)">
+    <path d="M0,0 C-6,-3 -9,3 0,0 C9,3 6,-3 0,0" fill="#ff8a65" opacity="0.8"/>
+    <line x1="0" y1="0" x2="0" y2="3" stroke="#000000" stroke-width="1"/>
+  </g>
+  
+  <!-- Verbindingslijn -->
+  <path d="M440,370 C500,350 550,350 600,360" stroke="#ffcc00" stroke-width="3" stroke-dasharray="5,5" opacity="0.8"/>
+</svg>

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Ruimte achtergrond -->
+  <rect width="800" height="500" fill="#0c1445"/>
+  
+  <!-- Sterren -->
+  <g id="stars">
+    <circle cx="50" cy="60" r="1.5" fill="white" opacity="0.8"/>
+    <circle cx="120" cy="30" r="1" fill="white" opacity="0.6"/>
+    <circle cx="200" cy="70" r="2" fill="white" opacity="0.9"/>
+    <circle cx="280" cy="40" r="1.2" fill="white" opacity="0.7"/>
+    <circle cx="350" cy="90" r="1.8" fill="white" opacity="0.8"/>
+    <circle cx="400" cy="20" r="1.3" fill="white" opacity="0.7"/>
+    <circle cx="480" cy="50" r="1.7" fill="white" opacity="0.9"/>
+    <circle cx="520" cy="85" r="1" fill="white" opacity="0.6"/>
+    <circle cx="600" cy="35" r="2" fill="white" opacity="0.8"/>
+    <circle cx="650" cy="70" r="1.5" fill="white" opacity="0.7"/>
+    <circle cx="710" cy="25" r="1.3" fill="white" opacity="0.6"/>
+    <circle cx="760" cy="60" r="1.8" fill="white" opacity="0.9"/>
+    <circle cx="70" cy="120" r="1" fill="white" opacity="0.7"/>
+    <circle cx="150" cy="180" r="1.6" fill="white" opacity="0.8"/>
+    <circle cx="230" cy="140" r="1.2" fill="white" opacity="0.6"/>
+    <circle cx="300" cy="200" r="1.9" fill="white" opacity="0.9"/>
+    <circle cx="380" cy="150" r="1.4" fill="white" opacity="0.7"/>
+    <circle cx="450" cy="190" r="1.1" fill="white" opacity="0.6"/>
+    <circle cx="530" cy="130" r="1.7" fill="white" opacity="0.8"/>
+    <circle cx="590" cy="170" r="1.3" fill="white" opacity="0.7"/>
+    <circle cx="670" cy="140" r="2" fill="white" opacity="0.9"/>
+    <circle cx="730" cy="190" r="1.5" fill="white" opacity="0.8"/>
+    <circle cx="90" cy="230" r="1.2" fill="white" opacity="0.7"/>
+    <circle cx="160" cy="270" r="1.8" fill="white" opacity="0.9"/>
+    <circle cx="250" cy="240" r="1.4" fill="white" opacity="0.7"/>
+    <circle cx="330" cy="280" r="1.1" fill="white" opacity="0.6"/>
+    <circle cx="400" cy="220" r="2" fill="white" opacity="0.9"/>
+    <circle cx="470" cy="260" r="1.5" fill="white" opacity="0.8"/>
+    <circle cx="550" cy="230" r="1.3" fill="white" opacity="0.7"/>
+    <circle cx="620" cy="270" r="1.9" fill="white" opacity="0.9"/>
+    <circle cx="690" cy="240" r="1.2" fill="white" opacity="0.6"/>
+    <circle cx="760" cy="290" r="1.7" fill="white" opacity="0.8"/>
+    <circle cx="60" cy="320" r="1.4" fill="white" opacity="0.7"/>
+    <circle cx="130" cy="360" r="1.9" fill="white" opacity="0.9"/>
+    <circle cx="210" cy="330" r="1.2" fill="white" opacity="0.6"/>
+    <circle cx="280" cy="370" r="1.6" fill="white" opacity="0.8"/>
+    <circle cx="350" cy="340" r="1.3" fill="white" opacity="0.7"/>
+    <circle cx="430" cy="380" r="2" fill="white" opacity="0.9"/>
+    <circle cx="500" cy="320" r="1.5" fill="white" opacity="0.8"/>
+    <circle cx="570" cy="360" r="1.1" fill="white" opacity="0.6"/>
+    <circle cx="650" cy="330" r="1.8" fill="white" opacity="0.9"/>
+    <circle cx="720" cy="370" r="1.4" fill="white" opacity="0.7"/>
+    <circle cx="100" cy="400" r="1.3" fill="white" opacity="0.7"/>
+    <circle cx="180" cy="440" r="1.7" fill="white" opacity="0.8"/>
+    <circle cx="260" cy="410" r="1.2" fill="white" opacity="0.6"/>
+    <circle cx="330" cy="450" r="1.9" fill="white" opacity="0.9"/>
+    <circle cx="400" cy="420" r="1.5" fill="white" opacity="0.8"/>
+    <circle cx="480" cy="460" r="1.1" fill="white" opacity="0.6"/>
+    <circle cx="550" cy="430" r="1.8" fill="white" opacity="0.9"/>
+    <circle cx="630" cy="470" r="1.3" fill="white" opacity="0.7"/>
+    <circle cx="700" cy="420" r="1.6" fill="white" opacity="0.8"/>
+    <circle cx="770" cy="460" r="1.4" fill="white" opacity="0.7"/>
+  </g>
+  
+  <!-- Planeten -->
+  <circle cx="650" cy="130" r="40" fill="#a15cdb" opacity="0.8"/>
+  <ellipse cx="650" cy="130" rx="50" ry="10" fill="none" stroke="#c78df5" stroke-width="1" opacity="0.6"/>
+  
+  <circle cx="150" cy="400" r="30" fill="#5c87db" opacity="0.8"/>
+  <circle cx="150" cy="400" r="35" fill="none" stroke="#8db3f5" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Ruimtestation -->
+  <g transform="translate(400, 250)">
+    <rect x="-60" y="-15" width="120" height="30" fill="#d1d1d1" rx="5" ry="5"/>
+    <rect x="-80" y="-5" width="20" height="10" fill="#a1a1a1"/>
+    <rect x="60" y="-5" width="20" height="10" fill="#a1a1a1"/>
+    <rect x="-50" y="-25" width="100" height="10" fill="#b8b8b8"/>
+    <rect x="-40" y="-35" width="80" height="10" fill="#d1d1d1"/>
+    <rect x="-55" y="15" width="110" height="5" fill="#8a8a8a"/>
+    
+    <!-- Zonnepanelen -->
+    <rect x="-120" y="-2" width="40" height="4" fill="#2a6db5"/>
+    <rect x="80" y="-2" width="40" height="4" fill="#2a6db5"/>
+  </g>
+  
+  <!-- Clefairy en Deoxys (Pokémon silhouetten) -->
+  <g transform="translate(220, 180)">
+    <ellipse cx="0" cy="0" rx="18" ry="20" fill="#ffc2d1"/>
+    <ellipse cx="-8" cy="-5" rx="4" ry="5" fill="#ffdddd"/>
+    <ellipse cx="8" cy="-5" rx="4" ry="5" fill="#ffdddd"/>
+    <path d="M0,5 Q0,10 0,12" stroke="#ff9eb5" stroke-width="1" fill="none"/>
+    <path d="M-15,-15 L-5,-8 L-15,-5" fill="#ffc2d1"/>
+    <path d="M15,-15 L5,-8 L15,-5" fill="#ffc2d1"/>
+  </g>
+  
+  <g transform="translate(580, 320)">
+    <path d="M0,-25 C10,-20 15,-15 15,-5 C15,5 10,15 0,25 C-10,15 -15,5 -15,-5 C-15,-15 -10,-20 0,-25" fill="#ff5a5a"/>
+    <ellipse cx="0" cy="-10" rx="5" ry="8" fill="#ff8a8a"/>
+    <line x1="-15" y1="-5" x2="-25" y2="-15" stroke="#ff5a5a" stroke-width="3"/>
+    <line x1="15" y1="-5" x2="25" y2="-15" stroke="#ff5a5a" stroke-width="3"/>
+    <line x1="-10" y1="15" x2="-20" y2="25" stroke="#ff5a5a" stroke-width="3"/>
+    <line x1="10" y1="15" x2="20" y2="25" stroke="#ff5a5a" stroke-width="3"/>
+  </g>
+  
+  <!-- Trainer silhouet -->
+  <g transform="translate(330, 390)">
+    <circle cx="0" cy="-35" r="10" fill="#263238"/>
+    <path d="M0,-25 L0,10" stroke="#263238" stroke-width="5" fill="none"/>
+    <path d="M0,-5 L-15,10" stroke="#263238" stroke-width="4" fill="none"/>
+    <path d="M0,-5 L15,10" stroke="#263238" stroke-width="4" fill="none"/>
+    <path d="M0,10 L-10,30" stroke="#263238" stroke-width="4" fill="none"/>
+    <path d="M0,10 L10,30" stroke="#263238" stroke-width="4" fill="none"/>
+  </g>
+  
+  <!-- Utrecht skyline silhouet -->
+  <path d="M0,500 L0,460 L50,460 L50,440 L70,440 L70,420 L90,420 L90,450 L110,450 L110,430 L130,430 L130,410 L150,410 L150,440 L170,440 L170,420 L190,420 L190,450 L210,450 L210,435 L240,435 L240,415 L260,415 L260,445 L290,445 L290,425 L310,425 L310,410 L330,410 L330,390 L340,390 L340,410 L350,410 L350,430 L370,430 L370,450 L390,450 L390,420 L410,420 L410,440 L430,440 L430,410 L450,410 L450,430 L470,430 L470,420 L490,420 L490,450 L510,450 L510,425 L530,425 L530,445 L550,445 L550,415 L570,415 L570,435 L590,435 L590,450 L610,450 L610,430 L630,430 L630,410 L650,410 L650,440 L670,440 L670,420 L690,420 L690,445 L710,445 L710,425 L730,425 L730,440 L750,440 L750,455 L770,455 L770,440 L790,440 L790,460 L800,460 L800,500 Z" fill="#0a0e2e"/>
+  
+  <!-- Verbindingslijn -->
+  <path d="M330,390 C400,350 500,350 580,320" stroke="#ffcc00" stroke-width="3" stroke-dasharray="5,5" opacity="0.8"/>
+</svg>
