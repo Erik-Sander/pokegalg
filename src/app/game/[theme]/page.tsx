@@ -505,23 +505,15 @@ export default function GamePage({ params }: GamePageProps): JSX.Element {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
+      backgroundImage: `url(${themeDetails.svg})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
     }}>
       <style dangerouslySetInnerHTML={{ __html: `
         ${shimmerKeyframes}
         ${fadeInKeyframes}
-        .theme-bg {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          opacity: 0.15;
-          z-index: 0;
-          animation: fadeIn 1s ease-in-out;
-        }
       `}} />
-      
-      <div className="theme-bg" style={backgroundStyle}></div>
       
       <div style={{ 
         backgroundColor: 'white',
