@@ -402,6 +402,14 @@ const shimmerKeyframes = `
   }
 `;
 
+// Fade-in animatie voor de achtergrond
+const fadeInKeyframes = `
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+`;
+
 // Game pagina component
 export default function GamePage({ params }: GamePageProps): JSX.Element {
   const { theme } = params;
@@ -413,6 +421,14 @@ export default function GamePage({ params }: GamePageProps): JSX.Element {
   const [gameStatus, setGameStatus] = useState<'playing' | 'won' | 'lost'>('playing');
   const [tip, setTip] = useState<string>('');
   
+  // Bereken CSS classes en stijlen op basis van state
+  const backgroundStyle = {
+    backgroundImage: `url(${themeDetails.svg})`,
+    backgroundSize: '60%',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  };
+
   // Maximum aantal fouten (6 voor een Pokémon team van 6)
   const MAX_WRONG_GUESSES = 6;
   
@@ -489,38 +505,23 @@ export default function GamePage({ params }: GamePageProps): JSX.Element {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundImage: `url(${themeDetails.svg})`,
-      backgroundSize: '60%',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      backgroundBlendMode: 'normal',
     }}>
-      <style>
-        {shimmerKeyframes}
-        {`
-          @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-          }
-          
-          .theme-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url(${themeDetails.svg});
-            background-size: 80%;
-            background-position: center;
-            background-repeat: no-repeat;
-            opacity: 0.15;
-            z-index: 0;
-            animation: fadeIn 1s ease-in-out;
-          }
-        `}
-      </style>
+      <style dangerouslySetInnerHTML={{ __html: `
+        ${shimmerKeyframes}
+        ${fadeInKeyframes}
+        .theme-bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0.15;
+          z-index: 0;
+          animation: fadeIn 1s ease-in-out;
+        }
+      `}} />
       
-      <div className="theme-bg"></div>
+      <div className="theme-bg" style={backgroundStyle}></div>
       
       <div style={{ 
         backgroundColor: 'white',
