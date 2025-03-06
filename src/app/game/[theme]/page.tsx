@@ -363,6 +363,7 @@ interface ThemeDetails {
   name: string;
   bgColor: string;
   accentColor: string;
+  svg: string;
 }
 
 const getThemeDetails = (themeId: string): ThemeDetails => {
@@ -372,18 +373,21 @@ const getThemeDetails = (themeId: string): ThemeDetails => {
       name: 'Ruimte Academie',
       bgColor: '#E6F0FF', // lichtblauw
       accentColor: '#3B82F6', // blauw-500
+      svg: '/themes/space-theme.svg',
     },
     garden: {
       id: 'garden',
       name: 'Botanische Tuin',
       bgColor: '#DCFCE7', // lichtgroen 
       accentColor: '#10B981', // groen-500
+      svg: '/themes/garden-theme.svg',
     },
     chess: {
       id: 'chess',
       name: 'Schaak Arena',
       bgColor: '#F3F4F6', // lichtgrijs
       accentColor: '#6B7280', // grijs-500
+      svg: '/themes/chess-theme.svg',
     }
   };
   
@@ -484,7 +488,12 @@ export default function GamePage({ params }: GamePageProps): JSX.Element {
       padding: '1.5rem',
       display: 'flex',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      backgroundImage: `url(${themeDetails.svg})`,
+      backgroundSize: '80%',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundBlendMode: 'soft-light',
     }}>
       <style>{shimmerKeyframes}</style>
       

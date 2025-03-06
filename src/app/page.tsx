@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   const [selectedTheme, setSelectedTheme] = useState<string | null>(null);
@@ -13,6 +14,7 @@ export default function Home() {
       description: 'Ontdek de communicatie in de oneindige ruimte',
       bgColor: '#E6F0FF', // lichtblauw
       borderColor: '#3B82F6', // blauw-500
+      svg: '/themes/space-theme.svg',
     },
     {
       id: 'garden',
@@ -20,6 +22,7 @@ export default function Home() {
       description: 'Laat je communicatie bloeien tussen de planten',
       bgColor: '#DCFCE7', // lichtgroen
       borderColor: '#22C55E', // groen-500
+      svg: '/themes/garden-theme.svg',
     },
     {
       id: 'chess',
@@ -27,6 +30,7 @@ export default function Home() {
       description: 'Strategische communicatie op het schaakbord',
       bgColor: '#F3F4F6', // lichtgrijs
       borderColor: '#6B7280', // grijs-500
+      svg: '/themes/chess-theme.svg',
     },
   ];
 
@@ -89,15 +93,33 @@ export default function Home() {
           >
             <div style={{ 
               backgroundColor: theme.bgColor,
-              height: '120px',
+              height: '180px',
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center'
+              justifyContent: 'center',
+              position: 'relative',
+              overflow: 'hidden'
             }}>
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                opacity: 0.2,
+                backgroundImage: `url(${theme.svg})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                zIndex: 1
+              }}></div>
               <span style={{ 
                 fontSize: '1.5rem', 
                 fontWeight: 'bold',
-                color: '#1F2937' // grijs-800
+                color: '#1F2937', // grijs-800
+                position: 'relative',
+                zIndex: 2,
+                textShadow: '0 1px 2px rgba(255,255,255,0.7)'
               }}>
                 {theme.name}
               </span>
