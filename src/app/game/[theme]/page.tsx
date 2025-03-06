@@ -499,7 +499,6 @@ export default function GamePage({ params }: GamePageProps): JSX.Element {
   return (
     <div style={{ 
       position: 'relative',
-      backgroundColor: themeDetails.bgColor,
       minHeight: '100vh',
       padding: '1.5rem',
       display: 'flex',
@@ -509,6 +508,7 @@ export default function GamePage({ params }: GamePageProps): JSX.Element {
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
+      width: '100%',
     }}>
       <style dangerouslySetInnerHTML={{ __html: `
         ${shimmerKeyframes}
@@ -516,7 +516,7 @@ export default function GamePage({ params }: GamePageProps): JSX.Element {
       `}} />
       
       <div style={{ 
-        backgroundColor: 'white',
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
         borderRadius: '12px',
         padding: '2rem',
         maxWidth: '800px',
@@ -604,7 +604,7 @@ export default function GamePage({ params }: GamePageProps): JSX.Element {
             textAlign: 'center', 
             marginTop: '1.5rem',
             padding: '1.5rem',
-            backgroundColor: gameStatus === 'won' ? 'rgba(16, 185, 129, 0.1)' : 'rgba(239, 68, 68, 0.05)',
+            backgroundColor: 'rgba(255, 255, 255, 0.5)',
             borderRadius: '8px'
           }}>
             {gameStatus === 'won' ? (
